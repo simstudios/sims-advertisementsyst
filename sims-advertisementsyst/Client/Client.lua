@@ -7,11 +7,8 @@ CreateThread(function()
 		for k, v in pairs(Config.Advertisements.Locations) do
 			local me = PlayerPedId()
 			local heading = GetEntityHeading(me)
-
 			if GetDistanceBetweenCoords(GetEntityCoords(me), v) <= 5 then
-
 					sleep = 0
-
 				if GetDistanceBetweenCoords(GetEntityCoords(me),v) <= 1.8 and not IsPedDeadOrDying(me, true) then
 					if not IsPedInAnyVehicle(me, false) then
 
@@ -20,7 +17,6 @@ CreateThread(function()
 						if IsControlJustReleased(0, 38) then
                             InsertarTexto()
                         end 
-
 					end
 				end
 			end
